@@ -1,0 +1,448 @@
+/* Cabezera*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-link {
+    font-family: 'Cairo Play', sans-serif;
+    font-family: 'Loved by the King', cursive;
+    font-family: 'Nova Oval', cursive;
+}
+
+.navbar {
+    background-color: #AE72D0;
+}
+
+.navbar-nav {
+    list-style: none;
+}
+
+.nav-item {
+    display: inline-block;
+    position: relative;
+}
+
+.nav-link {
+    display: block;
+    padding: 15px 15px;
+    color: #33001b;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+.navbar-nav .nav-item:hover {
+    background: #91668f;
+}
+
+.navbar-nav .nav-item:hover ul.dropdown {
+    display: block;
+}
+
+.navbar-nav .nav-item ul.dropdown {
+    width: fit-content;
+    background: #91668f;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+.navbar-nav .nav-item ul.dropdown li {
+    display: block;
+}
+
+.nav-item.active ul.dropdown {
+    display: block;
+}
+
+
+.navbar-nav .nav-item:hover #campaign-dropdown {
+    display: block;
+}
+
+.navbar-nav .nav-item #campaign-dropdown {
+    width: fit-content;
+    background: #91668f;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+.navbar-nav .nav-item #campaign-dropdown a {
+    display: block;
+    padding: 10px;
+    color: #33001b;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+
+.jumbotron {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.display-3 {
+    font-size: 60px;
+    color: #91668f;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 60px;
+}
+
+
+
+/* Ola de la portada, esta parte fue hecha con videos aportados en youtube.*/
+header {
+    width: 100%;
+    height: 600px;
+    background: #8000804f;
+    background: -webkit-linear-gradient(to right, #ffc0cb79, #8000807a), url(../IMG/portada.jpg);
+    background: linear-gradient(to right, #ffc0cb79, #8000807a), url(../IMG/portada.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+header .texto-header {
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.texto-header h1 {
+    font-size: 70px;
+    color: #33001b;
+    font-family: 'Lilita One', cursive;
+}
+
+.texto-header h2 {
+    font-size: 50px;
+    font-weight: 300;
+    color: #33001b;
+    font-family: 'Dancing Script', cursive;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Sobre nosotros*/
+.sobre-nosotros .titulo {
+    text-align: center;
+}
+
+.contenedor-sobre-nosotros {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+
+.imgen-about-us {
+    width: 20%;
+    border: 3px solid #91668f;
+}
+
+.sobre-nosotros .contenido-texto {
+    width: 30%;
+}
+
+.contenido-texto h3 {
+    margin-bottom: 30px;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Lobster', cursive;
+    padding-left: 10px;
+    font-size: 30px;
+}
+
+.contenido-texto h3 span {
+    background: #91668f;
+    color: #251b25;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    margin-right: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contenido-textos p {
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+    font-size: 15px;
+}
+
+/*  Card con contenido de lo que hacemos */
+.container-tarje {
+    column-count: 3;
+    column-gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.card {
+    width: calc(50% - 40px);
+    background-color: #AE72D0;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.card:first-child {
+    margin-left: 0;
+}
+
+.card:last-child {
+    margin-right: 0;
+}
+
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Cairo Play', sans-serif;
+    font-family: 'IM Fell English', serif;
+    font-family: 'Loved by the King', cursive;
+    font-family: 'Nova Oval', cursive;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333333;
+    font-family: 'Cairo Play', sans-serif;
+    font-family: 'IM Fell English', serif;
+    font-family: 'Kalam', cursive;
+    font-family: 'Loved by the King', cursive;
+    font-family: 'Nova Oval', cursive;
+}
+
+/* Carousel */
+.carousel {
+    width: 900px;
+    height: 500px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    color: #754e7b;
+    background-color: purple;
+    border: 4px solid #754e7b;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel img {
+    width: 500px;
+    height: 500px;
+    display: block;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+    display: none;
+}
+
+.carousel .image-container {
+    border: 50px solid #754e7b;
+    border-radius: 10px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+
+/*Formulario*/
+
+.titulo {
+    text-align: center;
+}
+
+.card-for {
+    margin-top: 50px;
+}
+
+.card-for {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+
+.img-formulario {
+    width: 30%;
+    border: 3px solid #91668f;
+}
+
+.card-for .contenido-texto-card {
+    width: 45%;
+    font-size: 20px;
+}
+
+.contenido-texto-card h4 {
+    margin-bottom: 30px;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+}
+
+.contenido-texto-card p {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.contenido-texto-card h5 {
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+}
+
+/* Voluntario*/
+
+.container-mayores {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.container-mayores h2 {
+    color: #91668f;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.container-mayores p {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.container-mayores button {
+    background-color: #91668f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.container-mayores button:hover {
+    background-color: #754e7b;
+}
+
+/* Footer */
+
+.pie-pagina {
+    width: 100%;
+    background-color: #AE72D0;
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+    width: 100%;
+    max-width: 254px;
+    height: auto;
+    border-radius: 20px;
+    padding: 2px;
+    box-shadow: 0 1px 3px 2px #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.pie-pagina .grupo-1 .box figure img-creadora {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(0deg, #000, #272727);
+    color: #fff;
+    border-radius: 17px;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    color: #251c2a;
+    margin-bottom: 25px;
+    font-size: 25px;
+    font-family: 'Cairo Play', sans-serif;
+    font-family: 'Nova Oval', cursive;
+
+}
+
+.pie-pagina .grupo-1 .box p {
+    color: #1b1122;
+    margin-bottom: 10px;
+    font-family: 'Cairo Play', sans-serif;
+}
+
+/* Redes sociales */
+
+.pie-pagina .grupo-1 .redes-sociales a {
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fbf5fb;
+    border-radius: 50%;
+    text-align: center;
+    color: #f6f0f5;
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.pie-pagina .grupo-1 .redes-sociales a:hover {
+    color: #fefefe;
+    background: #3b0d38;
+}
+
+/* &copy */
+
+.titulo-final {
+    text-align: center;
+    font-size: 25px;
+    margin: 20px 0;
+    color: #f9f7f9;
+    padding: 20px;
+}

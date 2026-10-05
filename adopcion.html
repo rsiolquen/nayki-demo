@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Adopción | Ñayki</title>
+    <link rel="icon" href="IMG/Inicio_edad.png" />
+    <link rel="stylesheet" href="CSS/demo.css" />
+    <script defer src="demo.js"></script>
+    <script src="componentes/header.js" defer></script>
+    <script src="componentes/footer.js" defer></script>
+  </head>
+  <body class="form-page">
+    <div data-header="compacto"></div>
+    <main class="demo-panel">
+      <h1>Adopción</h1>
+      <p>
+        Formulario de demostración. Usa datos ficticios: no se envían ni se
+        guardan.
+      </p>
+      <form class="demo-form">
+        <label for="nombre">Nombre de ejemplo</label
+        ><input
+          id="nombre"
+          required
+          maxlength="100"
+          placeholder="Persona de ejemplo"
+        /><label for="correo">Correo de ejemplo</label
+        ><input
+          type="email"
+          id="correo"
+          required
+          placeholder="demo@example.com"
+        /><label for="edad">Edad de ejemplo (18 o más)</label
+        ><input type="number" id="edad" min="18" max="120" required /><label
+          for="motivacion"
+          >¿Cómo sería el hogar del gato?</label
+        ><textarea id="motivacion" required maxlength="1000"></textarea
+        ><button>Simular solicitud</button>
+      </form>
+      <p id="resultado" role="status" tabindex="-1"></p>
+      <a href="mayores.html">Volver a Ñayki</a
+      ><noscript>La simulación requiere JavaScript.</noscript>
+    </main>
+    <div data-footer></div>
+  </body>
+</html>

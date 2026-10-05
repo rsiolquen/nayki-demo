@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Bienvenida | Ñayki</title>
+    <link rel="icon" href="IMG/Inicio_edad.png" />
+    <link rel="stylesheet" href="CSS/demo.css" />
+    <script defer src="demo.js"></script>
+    <script src="componentes/header.js" defer></script>
+    <script src="componentes/footer.js" defer></script>
+  </head>
+  <body class="form-page">
+    <div data-header="compacto"></div>
+    <main class="demo-panel">
+      <p class="eyebrow">ÑAYKI · TRANSFORMANDO VIDAS FELINAS</p>
+      <h1>Pequeñas acciones,<br />nuevas oportunidades.</h1>
+      <p>Un proyecto sobre rescate, cuidado y adopción de gatos.</p>
+      <h2>Explora una experiencia según la edad</h2>
+      <p>Usa una edad de ejemplo. No necesitas entregar tu nombre.</p>
+      <form id="edad-form">
+        <label for="edad">Edad de ejemplo</label>
+        <input type="number" id="edad" min="1" max="120" step="1" required/>
+        <button>Explorar Ñayki</button>
+      </form>
+      <p><a href="mayores.html">Ver directamente la versión para adultos</a></p>
+      <p><a href="menores.html">Ver la versión para menores</a></p>
+      <noscript
+        >Usa los enlaces anteriores para navegar sin JavaScript.</noscript
+      >
+    </main>
+    <div data-footer></div>
+  </body>
+</html>
